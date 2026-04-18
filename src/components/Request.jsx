@@ -15,7 +15,7 @@ const Request = () => {
     setLoading(true)
     try {
       const res = await axios.get(
-       'http://localhost:3000/users/request/recevied',
+       `${BASE_URL}/users/request/recevied`,
         { withCredentials: true }
       )
       dispatch(setRequest(res.data.data))
